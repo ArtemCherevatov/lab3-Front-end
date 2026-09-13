@@ -1,0 +1,119 @@
+/* ====================================================
+   ЗАГАЛЬНІ СТИЛІ (Фон та контейнери)
+   ==================================================== */
+body {
+    background-color: #a8a8a8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    background: #fff;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+}
+
+.layout-container {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+/* Кольори блоків згідно з макетом Варіанту 3 */
+.box-header { background-color: #72e84e; color: #333; }
+.box-sidebar { background-color: #898bf5; color: #333; }
+.box-content { background-color: #aae4f9; color: #333; }
+.box-footer { background-color: #fcf4c4; color: #333; }
+
+
+/* ====================================================
+   ЗАВДАННЯ 1: Блочна верстка на FLOAT
+   ==================================================== */
+.float-layout .block {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.float-layout .box-header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px; 
+}
+
+.float-layout .main-wrapper {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.float-layout .box-sidebar {
+    width: 25%; 
+    height: 350px;
+    line-height: 350px;
+    float: left; 
+}
+
+.float-layout .box-content {
+    width: 75%; 
+    height: 350px;
+    line-height: 350px;
+    float: left;
+}
+
+.float-layout .box-footer {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    clear: both; 
+}
+
+
+/* ====================================================
+   ЗАВДАННЯ 2: Блочна верстка на FLEXBOX
+   ==================================================== */
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-layout .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.flex-layout .box-header {
+    width: 100%;
+    height: 80px;
+}
+
+.flex-layout .main-wrapper {
+    display: flex;
+    width: 100%;
+    height: 350px;
+}
+
+.flex-layout .box-sidebar {
+    width: 25%;
+}
+
+.flex-layout .box-content {
+    width: 75%; 
+}
+
+.flex-layout .box-footer {
+    width: 100%;
+    height: 80px;
+}
